@@ -1,0 +1,464 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Axis create Axis with values from 0 to 10 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <g
+        fill="none"
+        font-family="sans-serif"
+        font-size="10"
+        text-anchor="end"
+        transform="translate(10, 10)"
+      >
+        <path
+          class="domain"
+          d="M-6,0.5H0.5V200.5H-6"
+          stroke="currentColor"
+        />
+        <g
+          class="tick"
+          opacity="1"
+          transform="translate(0,0.5)"
+        >
+          <line
+            stroke="currentColor"
+            x2="-6"
+          />
+          <text
+            dy="0.32em"
+            fill="currentColor"
+            x="-9"
+          >
+            0
+          </text>
+        </g>
+        <g
+          class="tick"
+          opacity="1"
+          transform="translate(0,20.5)"
+        >
+          <line
+            stroke="currentColor"
+            x2="-6"
+          />
+          <text
+            dy="0.32em"
+            fill="currentColor"
+            x="-9"
+          >
+            1
+          </text>
+        </g>
+        <g
+          class="tick"
+          opacity="1"
+          transform="translate(0,40.5)"
+        >
+          <line
+            stroke="currentColor"
+            x2="-6"
+          />
+          <text
+            dy="0.32em"
+            fill="currentColor"
+            x="-9"
+          >
+            2
+          </text>
+        </g>
+        <g
+          class="tick"
+          opacity="1"
+          transform="translate(0,60.5)"
+        >
+          <line
+            stroke="currentColor"
+            x2="-6"
+          />
+          <text
+            dy="0.32em"
+            fill="currentColor"
+            x="-9"
+          >
+            3
+          </text>
+        </g>
+        <g
+          class="tick"
+          opacity="1"
+          transform="translate(0,80.5)"
+        >
+          <line
+            stroke="currentColor"
+            x2="-6"
+          />
+          <text
+            dy="0.32em"
+            fill="currentColor"
+            x="-9"
+          >
+            4
+          </text>
+        </g>
+        <g
+          class="tick"
+          opacity="1"
+          transform="translate(0,100.5)"
+        >
+          <line
+            stroke="currentColor"
+            x2="-6"
+          />
+          <text
+            dy="0.32em"
+            fill="currentColor"
+            x="-9"
+          >
+            5
+          </text>
+        </g>
+        <g
+          class="tick"
+          opacity="1"
+          transform="translate(0,120.5)"
+        >
+          <line
+            stroke="currentColor"
+            x2="-6"
+          />
+          <text
+            dy="0.32em"
+            fill="currentColor"
+            x="-9"
+          >
+            6
+          </text>
+        </g>
+        <g
+          class="tick"
+          opacity="1"
+          transform="translate(0,140.5)"
+        >
+          <line
+            stroke="currentColor"
+            x2="-6"
+          />
+          <text
+            dy="0.32em"
+            fill="currentColor"
+            x="-9"
+          >
+            7
+          </text>
+        </g>
+        <g
+          class="tick"
+          opacity="1"
+          transform="translate(0,160.5)"
+        >
+          <line
+            stroke="currentColor"
+            x2="-6"
+          />
+          <text
+            dy="0.32em"
+            fill="currentColor"
+            x="-9"
+          >
+            8
+          </text>
+        </g>
+        <g
+          class="tick"
+          opacity="1"
+          transform="translate(0,180.5)"
+        >
+          <line
+            stroke="currentColor"
+            x2="-6"
+          />
+          <text
+            dy="0.32em"
+            fill="currentColor"
+            x="-9"
+          >
+            9
+          </text>
+        </g>
+        <g
+          class="tick"
+          opacity="1"
+          transform="translate(0,200.5)"
+        >
+          <line
+            stroke="currentColor"
+            x2="-6"
+          />
+          <text
+            dy="0.32em"
+            fill="currentColor"
+            x="-9"
+          >
+            10
+          </text>
+        </g>
+      </g>
+    </div>
+  </body>,
+  "container": <div>
+    <g
+      fill="none"
+      font-family="sans-serif"
+      font-size="10"
+      text-anchor="end"
+      transform="translate(10, 10)"
+    >
+      <path
+        class="domain"
+        d="M-6,0.5H0.5V200.5H-6"
+        stroke="currentColor"
+      />
+      <g
+        class="tick"
+        opacity="1"
+        transform="translate(0,0.5)"
+      >
+        <line
+          stroke="currentColor"
+          x2="-6"
+        />
+        <text
+          dy="0.32em"
+          fill="currentColor"
+          x="-9"
+        >
+          0
+        </text>
+      </g>
+      <g
+        class="tick"
+        opacity="1"
+        transform="translate(0,20.5)"
+      >
+        <line
+          stroke="currentColor"
+          x2="-6"
+        />
+        <text
+          dy="0.32em"
+          fill="currentColor"
+          x="-9"
+        >
+          1
+        </text>
+      </g>
+      <g
+        class="tick"
+        opacity="1"
+        transform="translate(0,40.5)"
+      >
+        <line
+          stroke="currentColor"
+          x2="-6"
+        />
+        <text
+          dy="0.32em"
+          fill="currentColor"
+          x="-9"
+        >
+          2
+        </text>
+      </g>
+      <g
+        class="tick"
+        opacity="1"
+        transform="translate(0,60.5)"
+      >
+        <line
+          stroke="currentColor"
+          x2="-6"
+        />
+        <text
+          dy="0.32em"
+          fill="currentColor"
+          x="-9"
+        >
+          3
+        </text>
+      </g>
+      <g
+        class="tick"
+        opacity="1"
+        transform="translate(0,80.5)"
+      >
+        <line
+          stroke="currentColor"
+          x2="-6"
+        />
+        <text
+          dy="0.32em"
+          fill="currentColor"
+          x="-9"
+        >
+          4
+        </text>
+      </g>
+      <g
+        class="tick"
+        opacity="1"
+        transform="translate(0,100.5)"
+      >
+        <line
+          stroke="currentColor"
+          x2="-6"
+        />
+        <text
+          dy="0.32em"
+          fill="currentColor"
+          x="-9"
+        >
+          5
+        </text>
+      </g>
+      <g
+        class="tick"
+        opacity="1"
+        transform="translate(0,120.5)"
+      >
+        <line
+          stroke="currentColor"
+          x2="-6"
+        />
+        <text
+          dy="0.32em"
+          fill="currentColor"
+          x="-9"
+        >
+          6
+        </text>
+      </g>
+      <g
+        class="tick"
+        opacity="1"
+        transform="translate(0,140.5)"
+      >
+        <line
+          stroke="currentColor"
+          x2="-6"
+        />
+        <text
+          dy="0.32em"
+          fill="currentColor"
+          x="-9"
+        >
+          7
+        </text>
+      </g>
+      <g
+        class="tick"
+        opacity="1"
+        transform="translate(0,160.5)"
+      >
+        <line
+          stroke="currentColor"
+          x2="-6"
+        />
+        <text
+          dy="0.32em"
+          fill="currentColor"
+          x="-9"
+        >
+          8
+        </text>
+      </g>
+      <g
+        class="tick"
+        opacity="1"
+        transform="translate(0,180.5)"
+      >
+        <line
+          stroke="currentColor"
+          x2="-6"
+        />
+        <text
+          dy="0.32em"
+          fill="currentColor"
+          x="-9"
+        >
+          9
+        </text>
+      </g>
+      <g
+        class="tick"
+        opacity="1"
+        transform="translate(0,200.5)"
+      >
+        <line
+          stroke="currentColor"
+          x2="-6"
+        />
+        <text
+          dy="0.32em"
+          fill="currentColor"
+          x="-9"
+        >
+          10
+        </text>
+      </g>
+    </g>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
