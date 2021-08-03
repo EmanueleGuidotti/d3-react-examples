@@ -1,12 +1,16 @@
 import React, {createRef, useEffect} from "react";
 import * as d3 from "d3";
 
-function Axis() {
-  const gRref = createRef<SVGGElement>();
+interface Props {
+  axisFunction: Function;
+  scaleFunction: Function;
+}
 
+function Axis({axisFunction, scaleFunction}: Props) {
+  const gRref = createRef<SVGGElement>();
   const d3Render = () => {
-    const scale = d3.scaleLinear().domain([0, 10]).range([0, 200]);
-    const axis = d3["axisLeft"](scale);
+    const scale = scaleFunction;
+    const axis = axisFunction(scale);
     gRref.current && d3.select(gRref.current).call(axis);
   };
 
