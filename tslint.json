@@ -1,6 +1,15 @@
 {
-  "extends": [
+  "plugins": [
+    "prettier",
+    "react",
     "tslint",
+    "tslint-react",
+    "tslint-eslint-rules",
+    "tslint-config-prettier"
+  ],
+  "extends": [
+    "prettier",
+    "tslint:recommended",
     "tslint-react",
     "tslint-eslint-rules",
     "tslint-config-prettier"
@@ -9,11 +18,17 @@
     "rulesDirectory": [
       "node_modules/tslint-lines-between-class-members"
     ],
-    "lines-between-class-members": true,
+    "lines-between-class-members": [
+      "error",
+      "always",
+      { "exceptAfterSingleLine": true }
+    ],
     "max-line-length": {
       "options": [60]
     },
     "newline-after-var": ["error", "always"],
+    "no-unused-var": ["error", "always"],
+    "no-unused-expression": false,
     "new-parens": true,
     "no-arg": true,
     "no-bitwise": true,

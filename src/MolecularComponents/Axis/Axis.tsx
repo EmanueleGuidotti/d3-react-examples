@@ -2,17 +2,22 @@ import React, { createRef, useEffect } from "react";
 import * as d3 from "d3";
 
 interface Props {
-  axisFunction: Function;
-  scaleFunction: Function;
+  axisFunction: <Domain extends d3.AxisDomain>(
+    scale: d3.AxisScale<Domain>,
+  ) => d3.Axis<Domain>;
+  scaleFunction: d3.ScaleLinear<number, number>;
 }
 
-function Axis({ axisFunction, scaleFunction }: Props) {
+const AxisComponent = ({
+  axisFunction,
+  scaleFunction,
+}: Props) => {
   const gRref = createRef<SVGGElement>();
 
   const d3Render = () => {
     const scale = scaleFunction;
     const axis = axisFunction(scale);
-    gRref.current && d3.select(gRref.current).call(axis);
+    gRref?.current && d3.select(gRref.current).call(axis);
   };
 
   useEffect(() => {
@@ -20,6 +25,6 @@ function Axis({ axisFunction, scaleFunction }: Props) {
   });
 
   return <g transform={`translate(10, 10)`} ref={gRref} />;
-}
+};
 
-export { Axis };
+export { AxisComponent };
