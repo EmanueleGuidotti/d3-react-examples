@@ -1,7 +1,6 @@
 import React from "react";
 import { AxisComponent } from "./index";
 import { render } from "@testing-library/react";
-import * as d3 from "d3";
 
 describe("Axis", () => {
   it("create Axis Left with values from 0 to 10", () => {
