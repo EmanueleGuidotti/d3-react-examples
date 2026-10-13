@@ -1,5 +1,6 @@
 import React from "react";
 import { Scatterplot } from "../../MolecularComponents/Scatterplot";
+import * as d3 from "d3";
 
 const ScatterplotGraph = () => {
   const data = d3
