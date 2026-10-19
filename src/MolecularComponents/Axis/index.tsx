@@ -1,1 +1,1 @@
-export { AxisComponent } from "./Axis";
+export { Axis } from "./Axis";

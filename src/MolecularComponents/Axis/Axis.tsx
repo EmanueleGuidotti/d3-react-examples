@@ -1,34 +1,17 @@
-import React, { createRef, useEffect } from "react";
+import React, { createRef, useEffect, useRef } from "react";
 import * as d3 from "d3";
+import { Scale } from "../types/types";
 
-interface Props {
-  axis: string;
-  domain: number[];
-  range: number[];
-}
-
-const AxisComponent = ({
-  axis: axisProp,
-  domain,
-  range,
-}: Props) => {
-  const gRref = createRef<SVGGElement>();
-
-  const d3Render = () => {
-    const scale = d3
-      .scaleLinear()
-      .domain(domain)
-      .range(range);
-    // @ts-ignore
-    const axis = d3[axisProp](scale);
-    gRref?.current && d3.select(gRref.current).call(axis);
-  };
-
+const Axis = ({ scale, orientation, x = 0, y = 0 }: {
+  scale: Scale; orientation: "bottom" | "left"; x?: number; y?: number;
+}) => {
+  const ref = useRef<SVGGElement>(null);
   useEffect(() => {
-    d3Render();
-  }, [axisProp, domain, range]);
-
-  return <g transform={`translate(10, 10)`} ref={gRref} />;
+    if (!ref.current) return;
+    const axis = orientation === "bottom" ? d3.axisBottom(scale) : d3.axisLeft(scale);
+    d3.select(ref.current).call(axis);
+  }, [scale, orientation]);
+  return <g ref={ref} transform={`translate(${x}, ${y})`} />;
 };
 
-export { AxisComponent };
+export { Axis };
